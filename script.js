@@ -62,10 +62,10 @@ const addDataToHTML = () => {
         <div class="card">
           <img class="w-full h-64" src=${product.image} />
           <div class="py-6 px-2">
-            <h2>${product.name}</h2>
-            <p>${product.price}</p>
+            <h2 class="text-lg font-semibold text-serif">${product.name}</h2>
+            <p class="font-bold text-orange-500 text-xl">${product.price}</p>
             <p>${product.description}</p>
-            <button class="addCart flex w-full bg-orange-500 px-4 py-2 rounded-lg justify-center my-3 text-white font-semibold text-lg">Add To Cart</button>
+            <button class="addCart flex w-full bg-red-500 px-4 py-2 rounded-lg justify-center my-3 text-white font-semibold text-lg">Add To Cart</button>
             <button class="w-full bg-white border border-red-500 text-black px-4 py-2 rounded-lg justify-center font-semibold text-lg">Customized</button>
           </div>
         </div>
@@ -104,7 +104,6 @@ const addCartToHTML = () => {
   listCartHTML.innerHTML = "";
   let totalQuantity = 0;
   let totalPrice = 0; // Initialize totalPrice
-
   if (carts.length > 0) {
     carts.forEach((cart) => {
       totalQuantity += cart.quantity;

@@ -14,18 +14,18 @@
 
 <!-- Food Items Section -->
 <div class="container max-w-screen-lg m-auto">
-    <div class="navbar grid grid-cols-1 lg:grid-cols-2 py-3">
+    <div class="navbar grid grid-cols-1 lg:grid-cols-2 items-center py-3">
          <div class="flex gap-4">
-            <h2>icon</h2>
             <ul class="flex gap-3">
-                <li>home</li>
-                <li>about</li>
-                <li>menu</li>
+                <li class="text-[16px] font-serif text-slate-600 font-semibold">home</li>
+                <li class="text-[16px] font-serif text-slate-600 font-semibold">about</li>
+                <li class="text-[16px] font-serif text-slate-600 font-semibold">menu</li>
+                <li class="text-[16px] font-serif text-slate-600 font-semibold">Log in</li>
             </ul>
          </div>
-         <div class="flex justify-end shopping ">
-            <span class="icon-cart cursor-pointer "><span class="iconCartSpan absolute w-4 h-4 rounded-full bg-slate-700 top-0">0</span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-            <button class="ml-4">Order Now</button>
+         <div class="flex justify-end shopping items-center">
+            <span class="icon-cart cursor-pointer "><span class="iconCartSpan">0</span><i class="fa fa-shopping-cart text-2xl font-semibold" aria-hidden="true"></i></span>
+            <button class="ml-4 bg-red-500 rounded-lg px-4 py-2 text-white font-semibold">Order Now</button>
          </div>
     </div>
 
@@ -46,11 +46,9 @@
         <h2 >Carts Item: <span class="totalItem text-xl font-bold">0</span> </h2>
         <h2 class="shoppingClose cursor-pointer border border-red-500 hover:bg-red-500 hover:text-white duration-300 font-serif text-lg font-semibold flex rounded-lg px-5 py-2 ">Close</h2>
     </div>
-
-
+    <!-- show add to cart item -->
     <div class="cartTab">
         <ul class="listCart">
-
         </ul>
     </div>
     <!-- total price store -->
