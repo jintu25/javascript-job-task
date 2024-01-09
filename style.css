@@ -1,0 +1,52 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+    
+
+.sidebar{
+    width: 500px;
+    position: fixed;
+    background: #ff6b6b;
+    height: 100vh;
+    top: 0;
+    left: 100%;
+    transition: 0.5s;
+    color: white;
+}
+/* .sidebar .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2, 1fr;
+} */
+.card{
+    background-color: rgb(170, 169, 169);
+    box-shadow: 0px 10px 1px rgba(221, 221, 221, 1), 0 10px 20px rgba(204, 204, 204, 1);
+}
+.active .sidebar{
+    left: calc(100% - 500px);
+}
+.active .container{
+    transform: translateX(-100px);
+}
+.minus, .plus{
+    background-color: rgb(77, 77, 77);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: bold;
+    transition: .4s;
+}
+.delete:hover{
+    background-color: red;
+    color: white;
+}
+.minus:hover, .plus:hover{
+    background-color: rgb(255, 103, 103);
+    
+}

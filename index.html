@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Include Tailwind CSS or Bootstrap here -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- css link -->
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Food Items Section -->
+<div class="container max-w-screen-lg m-auto">
+    <div class="navbar grid grid-cols-1 lg:grid-cols-2 py-3">
+         <div class="flex gap-4">
+            <h2>icon</h2>
+            <ul class="flex gap-3">
+                <li>home</li>
+                <li>about</li>
+                <li>menu</li>
+            </ul>
+         </div>
+         <div class="flex justify-end shopping ">
+            <span class="icon-cart cursor-pointer "><span class="iconCartSpan absolute w-4 h-4 rounded-full bg-slate-700 top-0">0</span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+            <button class="ml-4">Order Now</button>
+         </div>
+    </div>
+
+    <div class="text-center max-w-screen-lg m-auto">
+        <h3 class="uppercase font-semibold text-3xl text-red-600">Chicken Crisper Combos</h3>
+        <p class="w-full lg:w-3/4 m-auto mb-8 mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores ducimus debitis quasi molestiae illum blanditiis itaque eligendi mollitia iusto assumenda!</p>
+    </div>
+    
+    <div class="listProduct py-16 mx-4 lg:mx-0 list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="item ">
+        </div>
+    </div>
+</div>
+
+<!-- Cart Sidebar -->
+<div class="sidebar">
+    <div class="checkOut flex justify-between px-12 py-3">
+        <h2 >Carts Item: <span class="totalItem text-xl font-bold">0</span> </h2>
+        <h2 class="shoppingClose cursor-pointer border border-red-500 hover:bg-red-500 hover:text-white duration-300 font-serif text-lg font-semibold flex rounded-lg px-5 py-2 ">Close</h2>
+    </div>
+
+
+    <div class="cartTab">
+        <ul class="listCart">
+
+        </ul>
+    </div>
+    <!-- total price store -->
+    <h3 class="px-4 text-4xl font-semibold absolute bottom-0 left-0 bg-orange-500 w-full">Total Price: <span class="totalPrice"></span></h3>
+</div>
+
+<!-- Include javascript -->
+<script src="script.js"></script>
+</body>
+</html>
